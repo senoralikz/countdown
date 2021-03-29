@@ -1,17 +1,75 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <title>Example</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <!-- Do not add `link` tags-->
-      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<head>
+  <title>Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <!-- Do not add `script` tags-->
-      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
-      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
-    </head>
-    <body>
-      <h1>Browser Template</h1>
-    </body>
+  <!-- Do not add `link` tags-->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Do not add `script` tags-->
+  <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+  <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+</head>
+
+<body>
+
+  <h1>Countdown</h1>
+
+  <div class="unauthenticated">
+    <div class="login">
+
+      <h4>Sign Up</h4>
+      <form id="sign-up">
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="email" class="modal-label">Email</label>
+            <br />
+            <input type="text" name="credentials[email]" />
+          </div>
+          <div class="form-group">
+            <label for="password" class="modal-label">Password</label>
+            <br />
+            <input type="password" name="credentials[password]" />
+          </div>
+          <div class="form-group">
+            <label for="confirm-password" class="modal-label">Confirm Password</label>
+            <br />
+            <input type="password" name="credentials[password_confirmation]" />
+          </div>
+          <p class="modal-message"></p>
+        </div>
+        <button type="submit" class="btn btn-dark">Sign Up</button>
+      </form>
+
+      <h4>Sign In</h4>
+      <form id="sign-in">
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="email" class="modal-label">Email</label>
+            <br />
+            <input type="text" name="credentials[email]" />
+          </div>
+          <div class="form-group">
+            <label for="password" class="modal-label">Password</label>
+            <br />
+            <input type="password" name="credentials[password]" />
+          </div>
+          <p class="modal-message"></p>
+        </div>
+        <button type="submit" class="btn btn-dark">Sign In</button>
+      </form>
+
+    </div>
+  </div>
+
+
+
+  <div class="authenticated">
+
+  </div>
+
+</body>
+
 </html>
